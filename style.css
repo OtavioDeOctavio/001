@@ -1,0 +1,187 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI',sans-serif;
+    background-color: rgb(243, 235, 221); color: #333;
+}
+.Menu {
+    background-color: #1e3c72;
+    padding: 15px 0;
+    position: sticky; /*menu fica em cima*/
+    top: 0; /*menu fica em cima*/
+    z-index: 1000; /*camada mil(sempre por cima dos outros)*/
+    box-shadow: 0 2px 30px rgba(0, 0, 0, 0.466); /*sombra*/
+}
+.menu-conteiner {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+.menu-logo {
+    color: white;
+    text-decoration: none;/*tira o negrito*/
+    font-weight: bold; /*negrito*/
+    font-size: 1.2rem;/* 1.2 vezes 16px*/
+    text-transform: uppercase; /*letra maiusculo*/
+}
+.lista{
+    position: absolute;
+    list-style: none; /*remove as bolinhas*/
+    margin: 0 auto;
+    display: flex;
+    gap: 20px;
+    padding: 0;
+    left: 40%;
+}
+.lista a{
+    color: #cbdcf7;
+    font-size: 0.9rem;
+    font-weight: 500;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+.lista a:hover {
+    color: #ffffff;
+}
+.cabecalho {
+    background-color: #2e4c82;
+    color: white;
+    padding: 60px 20px;
+    text-align: center;
+    
+}
+
+.cabecalho h1{
+    font-size: 2rem;
+    margin-bottom: 5px;
+    text-shadow: 0 0 63px #cad7ed23;
+}
+
+.cabecalho h2{
+    font-weight: 300;
+    font-style: italic;
+    color: #ffd700;
+    text-shadow: 0 2px 22px #b6c70284;
+    font-size: 1.8rem;
+    
+}
+.principal {
+    max-width: 900px;
+    margin: -40px auto 40px;/*sobe o bagui, altura, largura*/
+    padding: 20px;
+    
+}
+.cabecalho-logo{
+    width: auto;
+    height: 180px;
+    border-radius: 15px;
+    box-shadow: 0 0 63px #22232518;
+    
+}
+
+
+
+/*---------------------------separação-----------------------------*/
+
+.missao-valores{
+    background: white;
+    padding: 22px 27px;
+    border-radius: 18px;
+    box-shadow: 12px 12px 22px #33333332;
+}
+.pillar strong{
+    font-size: 22px;
+    padding: 0;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+}
+p{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #424242;
+    font-size: 14px;
+}
+.missao-valores h3{
+    font-size: 32px;
+    text-transform: uppercase;
+    margin-bottom: 0;
+    margin-top: 2px;
+    color: #203095;
+    text-shadow: 2px 2px 1px #2f2f2f43;
+}
+.pillar1 p{
+    color: #1a3567;
+    text-decoration: underline;
+}
+.objetivo1{
+    
+    background: white;
+    padding: 22px 27px;
+    border-radius: 18px;
+    box-shadow: 12px 12px 22px #33333332;
+}
+.objetivo1 strong{
+    font-size: 22px;
+}
+.datas1{
+    background: white;
+    padding: 27px 20px;
+    border-radius: 18px;
+    box-shadow: 12px 12px 22px #33333332;
+    display: flex;
+}
+.datas2{
+    font-size: 14px;
+    background-color: #e9effa; 
+    width: 380px;
+    border-radius: 15px;
+    padding: 12px 23px;
+    padding-right: 12px;
+    margin: 0 20px;
+    box-shadow: -8px 0 0 #083b9c; 
+}
+.datas3{
+    font-size: 14px;
+    background-color: #e9effa; 
+    width: 380px;
+    border-radius: 15px;
+    padding: 12px 23px;
+    margin: 0 20px;
+    box-shadow: -8px 0 0 #083b9c;
+}
+.quando{
+    background: white;
+    padding: 22px 27px;
+    border-radius: 18px;
+    box-shadow: 12px 12px 22px #33333332;
+    display: flex;
+}
+.quando2{
+    background-color: rgb(225, 255, 217);
+    font-weight: 600;
+    width: 840px;
+    padding: 0 2px;
+    border-radius: 10px;
+}
+.quando p{
+    color: rgb(1, 196, 1);
+    font-size: 16px;
+    margin: 8px;
+    padding: 12px 0;
+}
+.quando3{
+    background-color: rgb(225, 255, 217);
+    font-weight: 600;
+    width: 840px;
+    padding: 0 2px;
+    border-radius: 10px;
+}
+.quando4{
+    background-color: rgb(225, 255, 217);
+    font-weight: 600;
+    width: 840px;
+    padding: 0 2px;
+    border-radius: 10px;
+}
