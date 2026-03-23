@@ -1,12 +1,13 @@
 body {
     margin: 0;
     font-family: 'Segoe UI', sans-serif;
-    background-color: #f4f7f6;
+    background-color: #fffdec;
     color: #333;
 }
 
 .menu {
-    background-color: #1e3c72;
+    /*background-color: #1e3c72;  #1e3c72 */
+    background: linear-gradient(90deg, #173161, #3966ba);
     padding: 15px 0;
     position: sticky;
     top: 0;
@@ -40,6 +41,7 @@ body {
 }
 
 .lista a{
+    
     color: #CBDCF7;
     text-decoration: none;
     font-size: 0.9rem;
@@ -49,6 +51,7 @@ body {
 
 .lista a:hover {
     color: #ffffff;
+    text-shadow: 1px 1px 22px #ffffff38;
 }
 
 .cabecalho {
@@ -134,17 +137,22 @@ table {
     border-collapse: collapse;
     margin-top: 20px;
     background-color: white;
+    
 }
 
 th, td {
+    
     padding: 15px;
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid #c9c7c7;
     text-align: left;
 }
 
 th {
     background-color: #1e3c72;
     color: white;
+}
+tr:hover{
+    background-color: rgb(241, 241, 241);
 }
 
 .box-amarela {
@@ -254,7 +262,7 @@ th {
 }
 
 .rodape {
-    background-color: #1e3c72;
+    background: linear-gradient(90deg, #173161, #3966ba);
     color: #ccc;
     text-align: center;
     padding: 20px;
