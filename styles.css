@@ -298,3 +298,28 @@ section:hover{
     transform: scale(1.03);
     box-shadow: 0 0 44px rgba(50, 117, 205, 0.382);
 }
+
+/*-------------------------------------------------------------*/
+.evento{
+    position: relative; /*como se estivesse flutuando na pagina*/
+    margin-bottom: 25px;
+}
+.evento ::before{/*cria elemento fantasma*/
+    content: '';/*modo arquiteto*/
+    width: 12px;
+    height: 12px;
+    position: absolute;
+    background: #c29f10;
+    border-radius: 50%;
+    left: -20px;
+    top: 5px;
+}
+.timeline{
+    border-left: 3px solid #173161;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+.grid-locais{
+    display: flex;
+    gap: 20px;
+}
