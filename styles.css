@@ -329,3 +329,63 @@ section:hover{
     padding: 15pxgit;
 
 }
+/*------------------------------------------------------------------------------------------*/
+.item span.emoji {
+    font-size: 1.2rem;
+    flex-shrink: 0;
+  }
+    .divider {
+    border: none;
+    border-top: 1px solid #e8ecf2;
+    margin-top: 2rem;
+  }
+  .item {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    font-size: 0.97rem;
+    color: #2a3550;
+    font-weight: 600;
+    opacity: 1;
+    
+  }
+   .col {
+    display: flex;
+    flex-direction: column;
+    gap: 0.72rem;
+  }
+    .items-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0;
+    row-gap: 0;
+  }
+  .header-row span {
+    color: #fff;
+    font-weight: 800;
+    font-size: 0.82rem;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+  }
+  .header-row {
+    background: #2d4a8a;
+    border-radius: 8px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0.75rem 1.5rem;
+    margin-bottom: 1.6rem;
+  }
+  .card-title {
+    font-size: 1.15rem;
+    font-weight: 800;
+    color: #1a2340;
+    margin-bottom: 1.2rem;
+    letter-spacing: 0.01em;
+  }
+  .card {
+
+    border-radius: 16px;
+    padding: 2rem 2.5rem 2.5rem;
+    max-width: 780px;
+    width: 100%;
+  }
