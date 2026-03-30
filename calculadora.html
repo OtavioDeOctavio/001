@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+    <title>Provas e Metas - Trote 2026</title>
+</head>
+<body>
+    <nav class="menu"> <!-- Menu de navegação -->
+            <div class="menu-container">
+                <a href="index.html" class="menu-logo"> Trote 2026 </a>
+                <ul class="lista">
+                    <li> <a href="index.html"> Início </a> </li>
+                    <li> <a href="introducao.html"> Introdução </a> </li>
+                    <li> <a href="formato.html"> Formato </a> </li>
+                    <li> <a href="equipes.html"> Equipes </a> </li>
+                    <li> <a href="provas.html"> Provas e Metas </a> </li>
+                    <li> <a href="integracao.html"> Integração </a> </li>
+                    <li> <a href="cronograma.html"> Cronograma </a> </li>
+                    <li> <a href="calculadora.html"> Calculadora </a> </li>
+                </ul>
+            </div>
+    </nav>
+    <header class="cabecalho">
+        <div class="cabecalho-container">
+            <h1> Cronograma </h1>
+
+        </div>
+    </header>
+
+    <main class="principal">
+        <section class="calculado">
+            <h3>Simulador de Pontos</h3>
+            <div class="form-grid">
+                <div class="form-grupo">
+                    <label>Arroz (5kg) - 10 pontos</label>
+                    <input type="number" id="qtdeArroz" min="0">
+                </div>
+                <div class="form-grupo">
+                    <label>Feijão (5kg) - 8 pontos</label>
+                    <input type="number" id="qtdeFeijao" min="0">
+                </div>
+            </div>
+            <button onclick="calcular()">Calcular Total de Equipes</button>
+            <div id="resultado" class="resultado-box">
+                resultado total: 0 pontos
+            </div>
+        </section>
+    </main>
+    <footer class="rodape">
+        <p>Coordenação Trote Solidário 2026: trotesolidario@facef.br </p>
+        <p>Uni-FACEF - Centro Universitário Municipal de Franca </p>
+    </footer>
+</body>
+<script>
+    function calcular(){
+        
+        let arroz = parseInt(document.getElementById("qtdeArroz").value) || 0;
+        let feijao = parseInt(document.getElementById("qtdeFeijao").value) || 0;
+        let pontos = (arroz * 10) + (feijao * 8);
+
+        
+        document.getElementById("resultado").innerText = "Pontuação total" + pontos
+        
+        
+    }
+</script>
+</html>
