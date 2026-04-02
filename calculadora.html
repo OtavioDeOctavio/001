@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="styles.css">
     <title>Provas e Metas - Trote 2026</title>
+    <script src="scripts.js"></script>
 </head>
 <body>
     <nav class="menu"> <!-- Menu de navegação -->
@@ -29,6 +30,23 @@
     </header>
 
     <main class="principal">
+        <section>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_1ztXOvjSoakZmjJVrdrs1HUZD1TAcu-BJQ&s" alt="">
+            <h3>Simulador de Metas</h3>
+            <div class="form-grid">
+                <div class="form-grupo">
+                    <label>kit de Suplementos (60 kits)</label>
+                    <input type="number" id="qtdeKitS" min="0">
+                </div>
+                <div class="form-grupo">
+                    <label>Suplementos (30 unidades)</label>
+                    <input type="number" id="qtdSuplementos" min="0">
+                </div>
+                <div class="form-grupo">
+                    <label>Leite (60 unidades)</label>
+                    <input type="number" id="qtdeLeite" min="0">
+                </div>
+        </section>
         <section class="calculado">
             <h3>Simulador de Pontos</h3>
             <div class="form-grid">
@@ -39,6 +57,14 @@
                 <div class="form-grupo">
                     <label>Feijão (5kg) - 8 pontos</label>
                     <input type="number" id="qtdeFeijao" min="0">
+                </div>
+                <div class="form-grupo">
+                    <label> óleo de Soja (900ml) - 4 pontos</label>
+                    <input type="number" id="qtdeSoja" min="0">
+                </div>
+                <div class="form-grupo">
+                    <label>Pacote de Macarrão (500g) - 2 pontos</label>
+                    <input type="number" id="qtdeMacarrao" min="0">
                 </div>
             </div>
             <button onclick="calcular()">Calcular Total de Equipes</button>
@@ -52,17 +78,4 @@
         <p>Uni-FACEF - Centro Universitário Municipal de Franca </p>
     </footer>
 </body>
-<script>
-    function calcular(){
-        
-        let arroz = parseInt(document.getElementById("qtdeArroz").value) || 0;
-        let feijao = parseInt(document.getElementById("qtdeFeijao").value) || 0;
-        let pontos = (arroz * 10) + (feijao * 8);
-
-        
-        document.getElementById("resultado").innerText = "Pontuação total" + pontos
-        
-        
-    }
-</script>
 </html>
